@@ -118,3 +118,7 @@ input:focus {
 a {
     color: rgb(207, 127, 127);
 }
+.credit {
+    position: fixed;
+    bottom: 5px;
+}
