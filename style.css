@@ -32,26 +32,41 @@
     flex-flow: column nowrap;
     justify-content: center;
     width: 60vw;
-    background-color: rgb(15, 24, 24);
-    padding-left: 30px;
+    background-color: rgb(2, 2, 24);
+    
 }
 .inputs-container {
     display: flex;
     flex-flow: row wrap;
-    gap:20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    gap:30px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    background-color: rgba(17, 226, 233, 0.068);
+    padding-left: 30px;
+    box-shadow: 5px 7px 5px rgba(219, 152, 152, 0.664);
 
-
+}
+.inputs-container:hover {
+    box-shadow: 5px 7px 5px rgba(116, 212, 153, 0.836);
+}
+.inputs-container:hover>label {
+    
+    color: rgb(43, 158, 129);
 }
 label {
     display: flex;
     flex-flow: column wrap;
     width: 40%;
+    color: rgb(228, 144, 144);
+    font-weight: bold;
+}
+label:hover {
+    color: rgb(80, 212, 162);
 }
 .foretext, .create-account {
     padding-top: 40px;
     padding-bottom: 30px;
+    padding-left: 30px;
 }
 
 i {
@@ -65,14 +80,41 @@ i {
     background-color: rgb(2, 192, 144);
     border: 4px solid rgb(178, 233, 243);
     border-radius: 15px;
+    
 }
 input {
-    background-color: rgb(131, 131, 131);
-    border: 2px solid rgb(178, 233, 243);
+    background-color: rgb(221, 223, 222);
+    border: 2px solid rgb(196, 138, 243);
     border-radius: 5px;
     color: black;
+    max-width: 20vw;
 }
 input:focus {
     border: 2px solid rgb(239, 243, 178);
     background-color: rgb(170, 173, 6);
+}
+.logo {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 13vh;
+    background-color: rgba(0, 0, 0, 0.233);
+    padding: 10px;
+
+}
+.logo-image {
+    height: 15vh;
+}
+.logo-text {
+    font-family: Norse-Bold;
+    font-size:5vh;
+    color: white;
+}
+.invalid {
+    background-color: red;
+}
+a {
+    color: rgb(207, 127, 127);
 }
